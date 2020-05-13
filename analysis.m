@@ -54,7 +54,7 @@ title("Sources by Political Leaning");
 %saveas(gcf,"pol_leaning.png");
 
 
-
+%This code comes directly from the matlab text analytics toolkit website.
 function documents = preprocessText(textData)
 
 % Tokenize the text.

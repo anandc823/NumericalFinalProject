@@ -1,4 +1,13 @@
 import pandas as pd
+import sqlite3
+
+
+con = sqlite3.connect("articles.db")
+c = conn.cursor()
+
+df = pd.read_sql_query("select * from articles",conn)
+df.to_csv("articles.csv")
+
 
 articles = pd.read_csv("articles.csv")
 
